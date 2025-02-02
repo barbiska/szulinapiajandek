@@ -140,7 +140,84 @@ svg path {
 #play-audio-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 20px;/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    body {
+        background-size: auto;
+    }
+
+    .map-container {
+        height: 100vh;
+    }
+
+    .bubble {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bubble img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .popup {
+        max-width: 90%;
+        font-size: 13px;
+    }
+
+    #popup-img {
+        max-width: 90%;
+        max-height: 50vh;
+    }
+
+    .nav-button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    #close-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    #play-audio-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bubble {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bubble img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .popup {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .nav-button {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    #close-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #play-audio-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
     padding: 10px 20px;
     background-color: #0b2a50;
     color: white;
@@ -155,3 +232,4 @@ svg path {
     background-color: #090224;
     color: white;
 }
+
