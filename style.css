@@ -29,6 +29,7 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 100%;
+    margin-bottom: -4px;
 }
 
 .popup {
@@ -174,6 +175,7 @@ svg path {
     .bubble img {
         width: 40px;
         height: 40px;
+        margin-bottom: -20px;
     }
 
     .popup {
