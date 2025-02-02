@@ -1,0 +1,235 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boldog Szülinapot Apukám!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1102/1102964.png">
+</head>
+
+<body>
+    <style>
+        body {
+            text-align: center;
+            background: url('https://wallpapers.com/images/featured/sky-mvehfqz6w2ges2dj.jpg') repeat;
+            background-size: cover;
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bubble {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .bubble:hover {
+            transform: scale(1.7);
+        }
+
+        .bubble img {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            background: rgb(255, 255, 255);
+            padding: 15px;
+            border-radius: 80px;
+            box-shadow: 0px 10px 20px rgb(0, 0, 0);
+            z-index: 100;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        .popup img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .popup .date {
+            margin-top: 10px;
+        }
+
+        .popup.show {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .lines-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            /* Prevent clicks on SVG */
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        svg path {
+            stroke: pink;
+            stroke-width: 4;
+            fill: none;
+            stroke-linecap: round;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="map-container">
+            <div class="bubble" style="top: 10%; left: 20%;"
+                onclick="openPopup('https://images.all-free-download.com/images/thumb/cat_hangover_relax_213869.webp', 'Date: Jan 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2435-number-1.svg">
+            </div>
+            <div class="bubble" style="top: 20%; left: 30%;"
+                onclick="openPopup('https://example.com/image2.jpg', 'Date: Feb 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2434-number-2.svg">
+            </div>
+            <div class="bubble" style="top: 30%; left: 40%;"
+                onclick="openPopup('https://example.com/image3.jpg', 'Date: Mar 2024')">
+                <img src="https://media.lordicon.com/icons/wired/flat/2433-number-3.svg">
+            </div>
+            <div class="bubble" style="top: 40%; left: 50%;"
+                onclick="openPopup('https://example.com/image4.jpg', 'Date: Apr 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2432-number-4.svg">
+            </div>
+            <div class="bubble" style="top: 50%; left: 60%;"
+                onclick="openPopup('https://example.com/image5.jpg', 'Date: May 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2431-number-5.svg">
+            </div>
+            <div class="bubble" style="top: 60%; left: 70%;"
+                onclick="openPopup('https://example.com/image6.jpg', 'Date: Jun 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2430-number-6.svg">
+            </div>
+            <div class="bubble" style="top: 70%; left: 80%;"
+                onclick="openPopup('https://example.com/image7.jpg', 'Date: Jul 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2429-number-7.svg">
+            </div>
+            <div class="bubble" style="top: 80%; left: 50%;"
+                onclick="openPopup('https://example.com/image8.jpg', 'Date: Aug 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2428-number-8.svg">
+            </div>
+            <div class="bubble" style="top: 90%; left: 30%;"
+                onclick="openPopup('https://example.com/image9.jpg', 'Date: Sep 2024')">
+                <img src="https://cdn-icons-png.flaticon.com/512/9929/9929648.png">
+            </div>
+            <div class="bubble" style="top: 100%; left: 10%;"
+                onclick="openPopup('https://example.com/image10.jpg', 'Date: Oct 2024')">
+                <img src="https://media.lordicon.com/icons/wired/lineal/2426-number-10.svg">
+            </div>
+        </div>
+
+        <div class="popup" id="popup" onclick="closePopup()">
+            <img id="popup-img" src="">
+            <div class="date" id="popup-date"></div>
+        </div>
+
+        <script src="main.js">
+
+        </script>
+    </body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boldog Szülinapot Apukám!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1102/1102964.png">
+</head>
+
+<body>
+    <div class="map-container">
+        <div class="bubble" style="top: 15%; left: 17%;"
+            onclick="openPopup(['https://i.postimg.cc/mgWnwBfW/IMG-1400.jpg','https://i.postimg.cc/prg63tm8/IMG-1399.jpg','https://i.postimg.cc/G2mVyK0B/IMG-1398.jpg','https://i.postimg.cc/tJ1crg4p/IMG-1401.jpg','https://i.postimg.cc/nV5gXq3z/IMG-1395.jpg'], 'Retro apu')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/640px-Eo_circle_blue_number-1.svg.png">
+        </div>
+        <div class="bubble" style="top: 9%; left: 38%;"
+            onclick="openPopup(['https://i.postimg.cc/HnSndBwT/IMG-8444.jpg','https://i.postimg.cc/2SdLxrpg/IMG-3767.jpg','https://i.postimg.cc/htR7xhY9/IMG-729017765343330.jpg','https://i.postimg.cc/26t155vL/IMG-1363.jpg','https://i.postimg.cc/76xvHDYy/IMG-2941.jpg'], 'Bébi Barbi')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Eo_circle_blue_number-2.svg/1200px-Eo_circle_blue_number-2.svg.png">
+        </div>
+        <div class="bubble" style="top: 18%; left: 60%;"
+            onclick="openPopup(['https://i.postimg.cc/QMgGZVDb/IMG-2394.jpg','https://i.postimg.cc/9Q7H1JNs/3-F8-D04-C7-30-E7-4-E63-AAB4-A52118-B36-C1-F.jpg','https://i.postimg.cc/xCw99h7G/2-E69-FF5-B-D379-4361-81-DA-5-B5-D4604-C804.jpg','https://i.postimg.cc/LXsyQs8h/IMG-0854.png'], 'Kicsi Barbi')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm6m4fvVuDe2lLebD72GLisiIgr9oVG_19FA&s">
+        </div>
+        <div class="bubble" style="top: 37%; left: 80%;"
+            onclick="openPopup(['https://i.postimg.cc/3x7zCYm0/IMG-2657.png','https://i.postimg.cc/15DLqfnZ/IMG-2800.png','https://i.postimg.cc/tJx8DgBW/IMG-2656.jpg','https://i.postimg.cc/9MNL6jDb/IMG-2658.png'], 'Közepes Barbi')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4-67K7GXjF_VMrGiHCremhn1Wa7y_VvUVA&s">
+        </div>
+        <div class="bubble" style="top: 44%; left: 57%;"
+            onclick="openPopup(['https://i.postimg.cc/CMNpdRWn/IMG-0559.jpg','https://i.postimg.cc/90W3J2qf/IMG-4706.png','https://i.postimg.cc/7hXFRRgn/IMG-9721.png','https://i.postimg.cc/qqBqP9Cm/IMG-8446.jpg'], 'Tini Barbi')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Eo_circle_blue_number-5.svg/1200px-Eo_circle_blue_number-5.svg.png">
+        </div>
+        <div class="bubble" style="top: 50%; left: 35%;"
+            onclick="openPopup(['https://i.postimg.cc/t4br6kWX/IMG-5451.jpg','https://i.postimg.cc/t4zBN6NF/IMG-5515.jpg','https://i.postimg.cc/Bt9Kdh4t/IMG-5519.png','https://i.postimg.cc/7PptHwLJ/IMG-5524.jpg','https://i.postimg.cc/prnjcNNg/IMG-5526.png','https://i.postimg.cc/rydY2KqL/IMG-5528.png','https://i.postimg.cc/gk8SrQwS/IMG-5537.png'], 'A nagy ugrás')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Eo_circle_blue_number-6.svg/2048px-Eo_circle_blue_number-6.svg.png">
+        </div>
+        <div class="bubble" style="top: 60%; left: 12%;"
+            onclick="openPopup(['https://i.postimg.cc/5NV5K00g/IMG-0207.png','https://i.postimg.cc/MZRbYRWX/IMG-5486.jpg','https://i.postimg.cc/2ypdDjxz/IMG-0087.jpg','https://i.postimg.cc/634Vg4nj/IMG-0217.jpg','https://i.postimg.cc/rsS1F6h5/IMG-0185.png','https://i.postimg.cc/W3ZrXLcx/IMG-0210.png','https://i.postimg.cc/Ls1nMtQ1/barbiisti200830-0278.jpg'], 'Barbiék esküvője')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eo_circle_blue_number-7.svg/2048px-Eo_circle_blue_number-7.svg.png">
+        </div>
+        <div class="bubble" style="top: 80%; left: 33%;"
+            onclick="openPopup(['https://i.postimg.cc/L4D4G93R/05b056f5-ed35-44a3-b045-c03b845921c3.jpg','https://i.postimg.cc/D0vvmHFt/af9e3742-d516-4bce-9e15-091d092022ef.jpg','https://i.postimg.cc/J0p1Xxzt/f297ff33-f2e1-42f1-a3b8-0f4aaa8c6fac.jpg','https://i.postimg.cc/TYP26ztb/IMG-3317.jpg','https://i.postimg.cc/yx8K7RyK/IMG-3313.jpg','https://i.postimg.cc/G2Qr0KYz/IMG-3449.jpg'], 'Tavaszi látogatások')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRru9K67cy4_iuJBxXu8sZe5nZ8qvMqk59JA&s">
+        </div>
+        <div class="bubble" style="top: 81%; left: 57%;"
+            onclick="openPopup(['https://i.postimg.cc/5Nk4NsrR/IMG-1396.jpg','https://i.postimg.cc/XYRn9p4K/IMG-7294.jpg','https://i.postimg.cc/13n9gph5/IMG-1397.jpg','https://i.postimg.cc/KvVbyRkX/IMG-0588.png'], 'Nyári látogatások')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Eo_circle_blue_number-9.svg/2048px-Eo_circle_blue_number-9.svg.png">
+        </div>
+        <div class="bubble" style="top: 74%; left: 77%;"
+            onclick="openPopup(['https://i.postimg.cc/GtgCtpXy/IMG-0487.jpg','https://i.postimg.cc/0Q8RCS3S/IMG-0496.jpg','https://i.postimg.cc/jj6YNc8K/IMG-5325.jpg','https://i.postimg.cc/Gpn1HVxq/IMG-7966.jpg','https://i.postimg.cc/MTxxrNcv/IMG-0463.jpg','https://i.postimg.cc/Zq64H45G/IMG-0471.jpg','https://i.postimg.cc/1RvPJWy3/IMG-2431.jpg','https://i.postimg.cc/4NnGMz3b/IMG-4905.jpg'], 'Téli látogatások')">
+            <img src="https://i.postimg.cc/rmMV5VDs/Eo-circle-blue-number-0-svg.png">
+        </div>
+
+        <!-- SVG Container for Lines -->
+        <div class="lines-container">
+            <svg></svg>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="nav-button left" onclick="prevImage()">&#9665;</button>
+            <img id="popup-img" src="">
+            <button class="nav-button right" onclick="nextImage()">&#9655;</button>
+        </div>
+        <div class="date" id="popup-date"></div>
+        <button id="close-button" onclick="closePopup()">Close</button>
+    </div>
+
+    <audio id="background-audio" autoplay loop>
+        <source src="assets/Stacy and George - The Mini Vandals.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="play-audio-button" onclick="toggleAudio()">🔊 Play/Pause Music</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
